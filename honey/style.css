@@ -1,0 +1,251 @@
+/* SECCIÓN 1 */
+
+body {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    background: #fff8e9;
+}
+
+.home {
+    background-image: url(img/background.png);
+    background-repeat: repeat;
+    background-size: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    height: 1200px;
+    animation: fondoinfinito 5s linear infinite;
+}
+
+
+@keyframes fondoinfinito {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -200px 0;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 80px;
+    padding: 10px;
+    height: 120px;
+}
+
+.menu_item {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.logo {
+    width: 450px;
+}
+
+.boton1 {
+    font-family: "Bangers", sans-serif;
+    font-size: 80px;
+    background: #FFB801;
+    padding: 20px 80px;
+    border-radius: 100px;
+    border: 10px #000 solid;
+    box-shadow: 0px 20px 0px 0px #000000;
+    text-align: center;
+}
+
+.banner_titulo {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* SECCIÓN 2 */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+    gap: 50px;
+}
+
+.mascota {
+    width: 600px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contenedor_titulo {
+    font-family: "Bangers", sans-serif;
+    font-size: 80px;
+}
+
+.contenedor_textos {
+    font-size: 30px;
+}
+
+.contenedor_boton {
+    font-family: "Bangers", sans-serif;
+    font-size: 40px;
+    background: #f84f2e;
+    padding: 20px 60px;
+    border-radius: 100px;
+    border: 5px #000 solid;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.contenedor_boton:hover {
+    background: #FFB801;
+    transition: all 0.2s ease-in-out;
+}
+
+/* SECCIÓN 3 */
+
+.producto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1e8d2;
+    padding: 200px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.tex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tex_titulo {
+    font-family: "Bangers", sans-serif;
+    font-size: 80px;
+    text-align: center;
+}
+
+.tex_subtitulo {
+    font-size: 40px;
+    color: #f84f2e;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tex_textos {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f84f2e;
+    width: 350px;
+    height: 450px;
+    gap: 30px;
+    padding: 10px;
+}
+
+.item_icono {
+    width: 200px;
+}
+
+.item_titulo {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .items {
+        flex-direction: column;
+    }
+
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+    .about {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .about {
+        padding: 200px 50px;
+    }
+
+    .mascota {
+        flex-direction: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: fit fit-content;
+        gap: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .logo {
+        width: 100%;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .boton1 {
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    .banner_titulo {
+        font-size: 40px;
+    }
+}

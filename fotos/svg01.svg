@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg class="linea_svg1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100%" viewBox="-524.019 156.346 1954.904 587.507" enable-background="new 0 0 880 1024" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:export>
+      <bx:file format="svg" path="Sin título.svg" excluded="true"/>
+      <bx:file format="svg" href="#object-0" path="Sin título 2.svg" excluded="true"/>
+    </bx:export>
+  </defs>
+  <path style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 20;" d="M -200.299 532.959 C -7.033 770.624 274.949 547.559 274.949 547.559 C 274.949 547.559 333.451 499.505 426.792 490.368 C 485.928 484.579 559.049 494.412 640.137 541.983 C 748.617 605.624 885.31 527.967 886.185 402.2 C 886.47 361.133 871.28 321.465 843.637 291.093" transform="matrix(-1, 0, 0, -1, 1161.13801645, 855.77824231)" id="object-0"/>
+  <path style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 20; transform-box: fill-box; transform-origin: 50% 50%;" d="M -481.8 607.041 C -288.53 844.706 -6.551 621.641 -6.551 621.641 C -6.551 621.641 51.951 573.587 145.292 564.45 C 204.428 558.661 277.549 568.494 358.637 616.065 C 467.117 679.706 603.81 602.049 604.685 476.282 C 604.97 435.215 589.78 395.547 562.137 365.175" id="path-1"/>
+</svg>
