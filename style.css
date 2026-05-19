@@ -443,11 +443,36 @@ body {
     line-height: 1.1;
 }
 
+.contenedor_imagen_final{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .final1_imagen {
     flex: 1;
     width: 100%;
     max-width: 600px;
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.35));
+    position: relative;
+    z-index: 2;
+}
+
+.mancha_azul {
+    position: absolute;
+
+    width: 450px;
+    height: 200px;
+
+    background: #06398c;
+
+    border-radius: 90% 35% 40% 30%;;
+
+    z-index: 1;
+
+    transform:
+        rotate(-8deg) translateY(-10px);
 }
 
 .final2 {
