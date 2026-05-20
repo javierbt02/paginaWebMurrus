@@ -593,6 +593,58 @@ body {
         .menu_seccion:nth-child(2) {
             gap: 22px;
         }
+
+                /* DESCRIPCION */
+        
+                .lados {
+                    flex-direction: column !important;
+                }
+        
+                .lado_foto {
+                    width: 100%;
+        
+                    justify-content: center;
+                }
+        
+                .foto_murrungas {
+                    width: 100%;
+        
+                    max-width: 520px;
+                }
+        
+                .lado_descripcion {
+                    align-items: center;
+        
+                    text-align: center;
+                }
+        
+                .descripcion_texto_item {
+                    flex-direction: column;
+        
+                    align-items: center;
+        
+                    text-align: center;
+                }
+        
+        
+                /* FOOTER */
+        
+                .final2 {
+                    flex-direction: column !important;
+        
+                    align-items: center;
+        
+                    gap: 25px;
+                }
+        
+                .final2_items {
+                    flex-direction: column !important;
+        
+                    gap: 16px;
+        
+                    text-align: center;
+                }
+        
 }
 
 
