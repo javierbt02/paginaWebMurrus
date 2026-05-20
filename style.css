@@ -10,17 +10,28 @@ img {
     display: block;
 }
 
+img {
+    transition: transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+}
+
 body {
     font-family: "Rubik", sans-serif;
     background: #e7eaf0;
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
-
-/* =========================
-   INICIO
-========================= */
+/* INICIO */
 
 .inicio {
     display: flex;
@@ -57,10 +68,21 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: clamp(15px, 3vw, 60px);
+
+
+    transition: color 0.2s ease;
+}
+
+.menu_item {
+    text-decoration: none;
     color: #e7eaf0;
     font-weight: bold;
     font-size: clamp(14px, 2vw, 20px);
     text-align: center;
+}
+
+.menu_item:hover {
+    color: #da5339;
 }
 
 .logo {
@@ -73,10 +95,7 @@ body {
 }
 
 
-
-/* =========================
-   CONTENIDO HERO
-========================= */
+/* CONTENIDO */
 
 .contenido {
     width: 100%;
@@ -133,10 +152,19 @@ body {
     text-align: center;
     z-index: 3;
 
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.contenedor_boton:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.1);
+    cursor: pointer;
 }
 
 .visual1 {
@@ -179,9 +207,7 @@ body {
 }
 
 
-/* =========================
-   DESCRIPCION
-========================= */
+/* DESCRIPCION */
 
 .descripcion {
     width: 100%;
@@ -280,10 +306,7 @@ body {
     filter: drop-shadow(0 15px 20px rgba(0, 0, 0, 0.40));
 }
 
-
-/* =========================
-   COMPARACION
-========================= */
+/* COMPARACION */
 
 .comparacion {
     width: 100%;
@@ -373,10 +396,7 @@ body {
 }
 
 
-
-/* =========================
-   TRANSICION
-========================= */
+/* TRANSICIÓN */
 
 .transicion{
     width: 100%;
@@ -397,9 +417,7 @@ body {
     filter: drop-shadow(0 15px 20px rgba(0, 0, 0, 0.40));
 }
 
-/* =========================
-   FINAL
-========================= */
+/* FINAL */
 
 .final {
     width: 100%;
@@ -490,6 +508,19 @@ body {
 
 .final2_instagram {
     width: 45px;
+    cursor: pointer;
+    transition: transform 0.2s ease,
+    filter 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.final2_instagram:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.final2_instagram:active {
+    transform: scale(0.96);
 }
 
 .final2_items {
@@ -503,9 +534,16 @@ body {
     text-align: center;
 }
 
-/* =========================
-   LAPTOP PEQUEÑO
-========================= */
+.final2_items >*{
+    cursor: pointer;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.final2_items >*:hover {
+    color: #06398c;
+}
+
+/* TAMAÑOS */
 
 @media (max-width: 1200px) {
 
@@ -528,10 +566,6 @@ body {
     }
 }
 
-/* =========================
-   HERO FIXES
-========================= */
-
 @media (max-width: 994px) {
 
     .linea_svg1 {
@@ -552,13 +586,11 @@ body {
     }
 }
 
-
-
 @media (max-width: 768px) {
 
     .linea_svg1 {
         width: 300%;
-        bottom: 16%;
+        bottom: 20%;
     }
 
     .imagen_inicio {
@@ -570,7 +602,7 @@ body {
     }
 
     .titulo-curvo {
-        width: 105vw;
+        width: 150vw;
     }
 
     .contenedor_boton {
@@ -578,72 +610,57 @@ body {
         font-size: 14px;
     }
 
-        .menu {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-    
-            gap: 25px;
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
         }
     
-        .menu_seccion {
-            justify-content: center;
+    .menu_seccion {
+        justify-content: center;
         }
     
         .menu_seccion:nth-child(2) {
-            gap: 22px;
+        gap: 22px;
         }
-
-                /* DESCRIPCION */
         
-                .lados {
-                    flex-direction: column !important;
-                }
+    .lados {
+        flex-direction: column !important;
+    }
         
-                .lado_foto {
-                    width: 100%;
+    .lado_foto {
+        width: 100%;
+        justify-content: center;
+    }
         
-                    justify-content: center;
-                }
+    .foto_murrungas {
+        width: 100%;
+        max-width: 520px;
+    }
         
-                .foto_murrungas {
-                    width: 100%;
+    .lado_descripcion {
+        align-items: center;
+        text-align: center;
+    }
         
-                    max-width: 520px;
-                }
+    .descripcion_texto_item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
         
-                .lado_descripcion {
-                    align-items: center;
+    .final2 {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 25px;
+    }
         
-                    text-align: center;
-                }
-        
-                .descripcion_texto_item {
-                    flex-direction: column;
-        
-                    align-items: center;
-        
-                    text-align: center;
-                }
-        
-        
-                /* FOOTER */
-        
-                .final2 {
-                    flex-direction: column !important;
-        
-                    align-items: center;
-        
-                    gap: 25px;
-                }
-        
-                .final2_items {
-                    flex-direction: column !important;
-        
-                    gap: 16px;
-        
-                    text-align: center;
-                }
+    .final2_items {
+        flex-direction: column !important;
+        gap: 16px;
+        text-align: center;
+    }
         
 }
 
@@ -664,12 +681,11 @@ body {
         font-size: 24px;
     }
 
-    .titulo-curvo {
-        width: 115vw;
-    }
-
     .contenedor_boton {
         padding: 10px 14px;
         font-size: 13px;
     }
 }
+
+/* ANIMACIONES */
+
