@@ -570,7 +570,7 @@ html {
 
     .linea_svg1 {
         width: 260%;
-        bottom: 14%;
+        bottom: 18%;
     }
 
     .imagen_inicio {
@@ -584,6 +584,12 @@ html {
     .titulo-curvo {
         width: 100vw;
     }
+
+    .menu {
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+                }
 }
 
 @media (max-width: 768px) {
@@ -602,7 +608,7 @@ html {
     }
 
     .titulo-curvo {
-        width: 150vw;
+        width: 165vw;
     }
 
     .contenedor_boton {
@@ -670,7 +676,7 @@ html {
 
     .linea_svg1 {
         width: 360%;
-        bottom: 18%;
+        bottom: 20%;
     }
 
     .imagen_inicio {
@@ -685,7 +691,8 @@ html {
         padding: 10px 14px;
         font-size: 13px;
     }
+
+    .titulo-curvo {
+        width: 180vw;
+        }
 }
-
-/* ANIMACIONES */
-
