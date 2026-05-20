@@ -132,6 +132,11 @@ body {
     font-weight: bold;
     text-align: center;
     z-index: 3;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
 }
 
 .visual1 {
@@ -453,8 +458,8 @@ body {
 .final1_imagen {
     flex: 1;
     width: 100%;
-    max-width: 600px;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.35));
+    max-width: 700px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.80));
     position: relative;
     z-index: 2;
 }
@@ -467,12 +472,12 @@ body {
 
     background: #06398c;
 
-    border-radius: 90% 35% 40% 30%;;
+    border-radius: 90% 45% 90% 45%;;
 
     z-index: 1;
 
     transform:
-        rotate(-8deg) translateY(-10px);
+        rotate(-2deg) translateY(25px);
 }
 
 .final2 {
@@ -496,4 +501,123 @@ body {
     color: #e7eaf0;
     font-size: clamp(16px, 2vw, 25px);
     text-align: center;
+}
+
+/* =========================
+   LAPTOP PEQUEÑO
+========================= */
+
+@media (max-width: 1200px) {
+
+    .linea_svg1 {
+        width: 260%;
+    }
+
+    .linea_svg2,
+    .linea_svg3 {
+        width: 160vw;
+    }
+
+    .imagen_inicio {
+        width: 55%;
+    }
+
+    .mancha_azul {
+        width: 380px;
+        height: 170px;
+    }
+}
+
+/* =========================
+   HERO FIXES
+========================= */
+
+@media (max-width: 994px) {
+
+    .linea_svg1 {
+        width: 260%;
+        bottom: 14%;
+    }
+
+    .imagen_inicio {
+        width: 50%;
+    }
+
+    .contenido_titulo {
+        font-size: 32px;
+    }
+
+    .titulo-curvo {
+        width: 100vw;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .linea_svg1 {
+        width: 300%;
+        bottom: 16%;
+    }
+
+    .imagen_inicio {
+        width: 58%;
+    }
+
+    .contenido_titulo {
+        font-size: 28px;
+    }
+
+    .titulo-curvo {
+        width: 105vw;
+    }
+
+    .contenedor_boton {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+        .menu {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            gap: 25px;
+        }
+    
+        .menu_seccion {
+            justify-content: center;
+        }
+    
+        .menu_seccion:nth-child(2) {
+            gap: 22px;
+        }
+}
+
+
+
+@media (max-width: 480px) {
+
+    .linea_svg1 {
+        width: 360%;
+        bottom: 18%;
+    }
+
+    .imagen_inicio {
+        width: 72%;
+    }
+
+    .contenido_titulo {
+        font-size: 24px;
+    }
+
+    .titulo-curvo {
+        width: 115vw;
+    }
+
+    .contenedor_boton {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
 }
